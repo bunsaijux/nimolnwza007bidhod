@@ -15,11 +15,11 @@ $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 $fh = fopen('logs.txt', 'a'); 
 fwrite($fh, ''."".$ip ."\n");
 $keys = array(
+   
 "NIMO-351896329-SHOP",
-
 "NIMO-35134896329-SHOP",
-
 "NIMO-35189653244529-SHOP"
+   
 ); 
 $sub = $_GET["key"];
 if (in_array($sub,$keys,TRUE)) {
